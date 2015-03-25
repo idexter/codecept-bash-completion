@@ -7,8 +7,6 @@ Original: https://github.com/Mediahero/Codeception/blob/1.8/codecept_complete.sh
 Thanks to https://github.com/kuntashov
 
 Script can autocomplete Codeception commands, options, suites(as dirs) and files in suites.
-Files and suites autocomplete works if tests are located in ./codeception or ./tests directory 
-in reference to directory from which `codecept` was run.
 
 ## Installation
 
