@@ -3,7 +3,8 @@ Bash Autocomplete for Codeception testing framework
 Actual for [Codeception 2.0.11](https://github.com/Codeception/Codeception/releases/tag/2.0.11)
 
 Original: https://github.com/Mediahero/Codeception/blob/1.8/codecept_complete.sh
-Thanks to https://github.com/kuntashov for idea
+
+Thanks to https://github.com/kuntashov
 
 Script can autocomplete Codeception commands, options, suites(as dirs) and files in suites.
 Files and suites autocomplete works if tests are located in ./codeception or ./tests directory 
