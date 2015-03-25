@@ -14,20 +14,23 @@ in reference to directory from which `codecept` was run.
 
 ### Ubuntu/Debian
 
+Run commands
 ```
 sudo wget https://raw.githubusercontent.com/DexterHD/codecept-bash-completion/master/src/codecept -O /etc/bash_completion.d/codecept
 sudo chmod +x /etc/bash_completion.d/codecept
 ```
+Restart shell
 
 ### OS X
 
 You must have `homebrew` package manager installed first.
-
+Run commands
 ```
 brew install wget bash-completion
 wget https://raw.githubusercontent.com/DexterHD/codecept-bash-completion/master/src/codecept -O /usr/local/etc/bash_completion.d/codecept
 chmod +x /usr/local/etc/bash_completion.d/codecept
 ```
+Restart shell
 
 ##License
 
