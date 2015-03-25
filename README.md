@@ -10,7 +10,7 @@ Script can autocomplete Codeception commands, options, suites(as dirs) and files
 
 ## Installation
 
-First `bash-completion` must be installed in yous operation system.
+First `bash-completion` must be installed in your operation system.
 Codeception must be available via `codecept` command
 
 ### Ubuntu/Debian
