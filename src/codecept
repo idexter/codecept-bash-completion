@@ -48,8 +48,17 @@ _codecept()
             commands="${base_cmds} ${generate_cmds}"
             ;;        
         bootstrap)
-            opts="-ns --namespace ${base_opts}"
+            opts="-ns --namespace -a --actor --compat --customize ${base_opts}"
             ;;
+	    build)
+	        opts="-c --config ${base_opts}"
+	        ;;
+		clean)
+			opts="-c --config ${base_opts}"
+			;;
+		console)
+			opts="-c --config --colors ${base_opts}"
+			;;
         help)
             opts="--xml --format --raw ${base_opts}"
             commands="${base_cmds} ${generate_cmds} ${refactor_cmds}"
@@ -58,13 +67,10 @@ _codecept()
             opts="--xml --raw --format"
             ;;
         run)
-            opts="--config --report --html --xml --tap --json --colors\
-                --no-colors --silent --steps --debug --coverage --no-exit\
-                --defer-flush --group --skip --skip-group --env ${base_opts}"
-            ;;
-        add-namespace)
-            opts="--force -c --config ${base_opts}"
-            commands="${opts}"            
+            opts="-c --config --report --html --xml --tap --json\
+ 			   		--colors --no-colors --silent --steps -d --debug\
+ 					--coverage --coverage-html --coverage-xml --coverage-text\
+ 					--no-exit -g --group -s --skip -sg --skip-group --env -f --fail-fast ${base_opts}"
             ;;
         -c|--config)
             _filedir '@(yml)'
