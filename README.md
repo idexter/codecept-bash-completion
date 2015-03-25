@@ -12,6 +12,9 @@ in reference to directory from which `codecept` was run.
 
 ## Installation
 
+First `bash-completion` must be installed in yous operation system.
+Codeception must be available via `codecept` command
+
 ### Ubuntu/Debian
 
 Run commands
