@@ -44,6 +44,9 @@ _codecept()
 
 	# Firs check base codeception command
     case "$prev" in
+	    codeception)
+	    	commands="${base_cmds} ${generate_cmds}"
+	    	;;
         codecept)
             commands="${base_cmds} ${generate_cmds}"
             ;;        
@@ -149,4 +152,5 @@ _codecept()
     return 0;
 }
 
+complete -F _codecept $filenames codeception
 complete -F _codecept $filenames codecept
