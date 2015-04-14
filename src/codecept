@@ -34,7 +34,7 @@ _codecept()
     prev=${COMP_WORDS[COMP_CWORD-1]}
 
 	# Base codecept command options
-    base_opts="--help --raw --format --quiet --verbose --version --ansi --no-ansi --no-interaction"
+    base_opts="--help --raw --format --quiet --verbose --version --ansi --no-ansi --no-interaction -h -q -v -vv -vvv -V -n"
 	# Base codecept commands
     base_cmds="bootstrap build clean console help list run self-update"
     # Base codecept generate:* commands
@@ -46,9 +46,11 @@ _codecept()
     case "$prev" in
 	    codeception)
 	    	commands="${base_cmds} ${generate_cmds}"
+			opts="--xml  ${base_opts}"
 	    	;;
         codecept)
             commands="${base_cmds} ${generate_cmds}"
+			opts="--xml  ${base_opts}"
             ;;        
         bootstrap)
             opts="-ns --namespace -a --actor --compat --customize ${base_opts}"
